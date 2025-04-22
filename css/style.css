@@ -529,13 +529,16 @@ a {
   margin-top: 120px;
 }
 /* LOOK KILLA */
+
 .look_killa {
   width: 100%;
   max-width: 1680px;
+  height: 100vh;
   background: url(../img/back2.png);
   margin-left: auto;
   margin-right: auto;
 }
+
 .killa_box {
   width: 100%;
   max-width: 1300px;
@@ -1110,4 +1113,31 @@ button:active {
 
 .popup-overlay.visible {
   display: block;
+}
+@media (min-width: 1680px) {
+  .boots,
+  .cap,
+  .container,
+  .container-shop,
+  .sweater1,
+  .contact_container {
+    height: 100%; /* Высота равна высоте экрана */
+    background: url(../img/back2.png); /* Фон */
+    background-size: cover; /* Масштабирует фон */
+    background-position: center; /* Центрирует фон */
+    max-width: none;
+  }
+  .models-container {
+    height: 100%; /* Высота равна высоте экрана */
+    background-size: cover; /* Масштабирует фон */
+    background-position: center; /* Центрирует фон */
+    max-width: none;
+  }
+  .look_killa{
+height: 100vh; /* Высота равна высоте экрана */
+    background: url(../img/back2.png); /* Фон */
+    background-size: cover; /* Масштабирует фон */
+    background-position: center; /* Центрирует фон */
+    max-width: none;
+  }
 }
