@@ -107,8 +107,8 @@ header {
   width: 100%;
   height: 590px;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 15px;
 }
 .ring1 {
   width: 350px;
@@ -135,6 +135,7 @@ header {
 }
 .text-ring1 {
   width: 410px;
+  height: 410px;
   color: white;
   font-size: clamp(15px, 2.2vw, 17px);
   display: flex;
@@ -719,6 +720,7 @@ button:active {
   .text-ring1 {
     max-width: 320px;
     width: 100%;
+    height: 320px;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -939,6 +941,7 @@ button:active {
   .text-ring1 {
     justify-content: start;
     gap: 15px;
+    height: auto;
   }
   .text-ring1 p {
     text-align: center;
@@ -958,6 +961,9 @@ button:active {
 @media (max-width: 420px) {
   .ring1-box {
     width: 90%;
+    justify-content: start;
+    gap: 20px;
+    height: 100%;
   }
   .card {
     -webkit-box-shadow: 0px 0px 27px -16px rgba(66, 66, 66, 0.4);
@@ -965,17 +971,16 @@ button:active {
     box-shadow: 0px 0px 27px 16px rgba(66, 66, 66, 0.4);
   }
   .ring1 img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     padding: 20px 0px 20px 0px;
   }
   .ring1 {
     width: 235px;
-    height: 328px;
+    height: 250px;
     -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
--moz-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
-
+    -moz-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
   }
   .swiper-slide {
     display: flex;
@@ -983,7 +988,13 @@ box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
     justify-content: center;
   }
   .card swiper-slide {
-    gap: 40px;
+    gap: 80px;
+  }
+  .card {
+    height: 535px;
+  }
+  .container{
+    height: 100vh;
   }
 }
 @media (max-width: 615px) {
