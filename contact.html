@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- ДО script.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    <script src="js/script.js"></script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -71,6 +75,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- favicon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
   </head>
   <body>
     <div class="contact_container">
@@ -92,54 +97,57 @@
         </div>
       </header>
       <!-- <div class="center"> -->
-        <div class="cont">
-          <form id="contact-form">
-            <h4>Get in touch with us</h4>
-            <div class="data_block">
-              <input type="hidden" name="contact_number" />
-              <input
-                type="text"
-                class="name"
-                name="user_name"
-                placeholder="Mason"
-                required
-                autocomplete="off"
-              />
-              <input
-                type="email"
-                class="mail"
-                name="user_email"
-                placeholder="E-mail"
-                required
-                autocomplete="off"
-              />
-              <input
-                type="text"
-                class="phone"
-                name="user_phone"
-                placeholder="Phone"
-                required
-                autocomplete="off"
-              />
-            </div>
-            <div class="text_area">
-              <textarea
-                rows="5"
-                name="message"
-                placeholder="Write your message here.."
-                required
-              ></textarea>
-            </div>
-            <div class="send">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
+      <div class="cont">
+        <form id="contact-form">
+          <h4>Get in touch with us</h4>
+          <div class="data_block">
+            <input type="hidden" name="contact_number" />
+            <input
+              type="text"
+              class="name"
+              name="user_name"
+              placeholder="Mason"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="email"
+              class="mail"
+              name="user_email"
+              placeholder="E-mail"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="tel"
+              class="phone"
+              name="user_phone"
+              placeholder="Phone"
+              id="phone"
+              required
+              autocomplete="off"
+              pattern="[+0-9]*"
+              inputmode="tel"
+              oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+            />
+          </div>
+          <div class="text_area">
+            <textarea
+              rows="5"
+              name="message"
+              placeholder="Write your message here.."
+              required
+            ></textarea>
+          </div>
+          <div class="send">
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
-      <div id="popup-message" class="popup hidden">
-        <p id="popup-text"></p>
-      </div>
+    </div>
+    <div id="popup-message" class="popup hidden">
+      <p id="popup-text"></p>
+    </div>
     <!-- </div> -->
-    <script src="js/script.js" defer></script>
   </body>
 </html>
