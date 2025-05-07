@@ -549,6 +549,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateY(50%);
 }
 .killa_box h1 {
   color: rgb(202, 202, 202);
@@ -1124,10 +1125,9 @@ button:active {
   .container-shop,
   .sweater1,
   .contact_container {
-    height: 100%; /* Высота равна высоте экрана */
-    background: url(../img/back2.png); /* Фон */
-    background-size: cover; /* Масштабирует фон */
-    background-position: center; /* Центрирует фон */
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
     max-width: none;
   }
   .models-container {
