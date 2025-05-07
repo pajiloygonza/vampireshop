@@ -400,15 +400,20 @@ a {
 .sweater1 main swiper-slide {
   text-align: center;
   font-size: clamp(16px, 2.3vw, 18px);
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .sweater1 main swiper-slide img {
   display: block;
-  width: clamp(250px, 40vw, 300px);
-  height: clamp(250px, 40vw, 300px);
+  width: clamp(250px, 40vw, 400px);
+  height: clamp(250px, 40vw, 400px);
+  object-fit: cover;
+}
+.sweater1 main swiper-slide .small-pic {
+  display: block;
+  width: clamp(250px, 40vw, 330px);
+  height: clamp(250px, 40vw, 400px);
   object-fit: cover;
 }
 .price_text {
@@ -471,14 +476,14 @@ a {
 }
 .sweater1 main swiper-slide .golf1 {
   display: block;
-  width: 594px;
-  height: 594px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
 }
 .sweater1 main swiper-slide .small-pic {
   display: block;
-  width: 570px;
-  height: 715px;
+  /* width: 570px; */
+  height: 100%;
   object-fit: cover;
 }
 .sweater1 main swiper-slide .shirt2 {
@@ -489,8 +494,8 @@ a {
 }
 .sweater1 main swiper-slide .jacket_girl {
   display: block;
-  width: 480px;
-  height: 720px;
+  width: clamp(250px, 40vw, 300px);
+  height: clamp(250px, 40vw, 400px);
   object-fit: cover;
 }
 .sweater1 main swiper-slide .mask {
@@ -506,8 +511,8 @@ a {
 }
 .sweater1 main swiper-slide .cap {
   display: block;
-  width: 500px;
-  height: 500px;
+  width: clamp(300px, 45vw, 500px);
+  height: clamp(300px, 45vw, 500px);
   object-fit: cover;
 }
 .sweater1 main swiper-slide .boots {
@@ -790,12 +795,6 @@ button:active {
     justify-content: center;
     align-items: center;
   }
-  .sweater1 main swiper-slide .cap {
-    display: block;
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-  }
   .sweater1 main swiper-slide .boots {
     display: block;
     width: 450px;
@@ -843,10 +842,6 @@ button:active {
   .sweater1 main swiper-slide .shirt2 {
     width: 320px;
     height: 320px;
-  }
-  .sweater1 main swiper-slide .cap {
-    width: 410px;
-    height: 410px;
   }
   .sweater1 main swiper-slide .mask {
     width: clamp(320px, 35vw, 410px);
@@ -933,7 +928,7 @@ button:active {
   .send {
     text-align: center;
   }
-  .contact_container{
+  .contact_container {
     height: 100vh;
   }
 }
@@ -1002,7 +997,8 @@ button:active {
   .card swiper-slide {
     padding: 22px 30px 30px 30px;
   }
-  .contact_container, .look_killa{
+  .contact_container,
+  .look_killa {
     overflow: hidden;
   }
 }
@@ -1127,7 +1123,7 @@ button:active {
   .contact_container {
     height: 100%;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     max-width: none;
   }
   .models-container {
@@ -1136,8 +1132,8 @@ button:active {
     background-position: center; /* Центрирует фон */
     max-width: none;
   }
-  .look_killa{
-height: 100vh; /* Высота равна высоте экрана */
+  .look_killa {
+    height: 100vh; /* Высота равна высоте экрана */
     background: url(../img/back2.png); /* Фон */
     background-size: cover; /* Масштабирует фон */
     background-position: center; /* Центрирует фон */
